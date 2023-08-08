@@ -1,13 +1,97 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body{
+  width: 100vw;
+  height: 100vh;
+}
+header{
+  width: 100%;
+  background-color: #0a0252;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  font: 2em sans-serif;
+}
+
+footer{
+  width: 100%;
+  color: #0a0252;
+  background-color: #eaeaef;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+footer button{
+  border: none;
+  background-color: #0a0252;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.gallery{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px;
+}
+
+.image-card img{
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.image-details{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.image-details-card{
+  width: 70%;
+  background-color: #1e0996;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 720px) {
+  .image-details-card{
+    width: 90%;
+    flex-direction: column;
+  }
+}
+
+.image-details-card img{
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 10px #000;
+}
+
+.details{
+  padding: 20px;
+}
+
+.details h2{
+  margin-bottom: 20px;
 }
