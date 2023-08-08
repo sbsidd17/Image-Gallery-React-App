@@ -29,8 +29,6 @@ Usage
 
 After installing the dependencies, start the development server using the following command:
 
-sql
-
 npm start
 
 This will run the app in development mode. Open your browser and go to http://localhost:3000 to view the app.
